@@ -11,5 +11,13 @@ Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
+Route::get('/proyectos', function () {
+    return Inertia::render('Proyectos/Index');
+});
+
+Route::get('/proyectos/{id}/ver', function ($id) {
+    return Inertia::render('Proyectos/Detalle', ['id' => $id]);
+});
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

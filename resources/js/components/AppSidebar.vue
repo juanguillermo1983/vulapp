@@ -9,11 +9,33 @@ import { BookOpen, Folder, LayoutGrid } from 'lucide-vue-next';
 import AppLogo from './AppLogo.vue';
 
 const mainNavItems: NavItem[] = [
+    
     {
         title: 'Dashboard',
         href: '/dashboard',
         icon: LayoutGrid,
     },
+    {
+        title: 'Proyectos',
+        href: '/proyectos',
+        icon: Folder,
+    },
+    {
+        title: 'Versiones',
+        href: '/versiones',
+        icon: Folder,
+    },
+    {
+        title: 'Compromisos',
+        href: '/compromisos',
+        icon: Folder,
+    },
+    {
+        title: 'Pruebas',
+        href: '/pruebas',
+        icon: Folder,
+    },
+    
 ];
 
 const footerNavItems: NavItem[] = [
